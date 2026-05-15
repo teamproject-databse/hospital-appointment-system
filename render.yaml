@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: hospital-appointment-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start:prod
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      # Add your secrets in the Render dashboard, not here:
+      # DATABASE_URL, JWT_SECRET, etc.
