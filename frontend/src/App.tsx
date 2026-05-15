@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className="container">
       <h1>Hospital Appointment System</h1>
-      <p className="subtitle">Your health, our priority</p>
+      <p className="subtitle">Book appointments with ease</p>
       <div className="status-card">
         <span>API Status: </span>
         <span className={status === 'ok' ? 'status-ok' : 'status-error'}>
